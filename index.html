@@ -29,6 +29,33 @@
         <li><a href="https://www.instagram.com" class="link">Instagram</a></li>
         <li><a href="https://www.facebook.com" class="link">Facebook</a></li>
       </ul></p>
+      <p><table class="schedule">
+        <thead>
+          <tr>
+            <th>Номер</th>
+            <th>Маршрут</th>
+            <th>Час у дорозі</th>
+          </tr>
+        </thead>
+      
+        <tbody class="schedule-body">
+          <tr>
+            <td>433</td>
+            <td>Київ - Ковель</td>
+            <td>5 годин</td>
+          </tr>
+          <tr>
+            <td>701</td>
+            <td>Харків - Дніпро</td>
+            <td>7 годин</td>
+          </tr>
+          <tr>
+            <td>258</td>
+            <td>Львів - Одеса</td>
+            <td>4 годин</td>
+          </tr>
+        </tbody>
+      </table></p>
       <style>.social-links .link {
         color: teal;
       }
@@ -44,6 +71,22 @@
       
       .social-links .link:visited {
         color: green;
-      }</style> 
+      }
+      .schedule-body > tr:hover {
+  background-color: tomato;
+  color: white;
+}
+
+/* Оформлення таблиці */
+.schedule {
+  border-collapse: collapse;
+}
+
+.schedule th,
+.schedule td {
+  padding: 8px;
+  border: 1px solid #212121;
+}
+</style> 
 </body>
 </html>
